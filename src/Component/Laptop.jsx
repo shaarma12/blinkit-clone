@@ -8,7 +8,6 @@ const Laptop = () => {
   const getLaptop = async () => {
     try {
       const response = await axios.get(LAPTOP_API);
-      console.log("Laptop", response?.data?.products);
       setProducts(response?.data?.products);
     } catch (err) {
       console.log(err);

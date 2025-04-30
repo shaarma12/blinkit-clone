@@ -8,7 +8,6 @@ const Appliances = () => {
   const getApppliance = async () => {
     try {
       const response = await axios.get(APPLIANCES_API);
-      console.log("Appliances", response?.data?.products);
       setProducts(response?.data?.products);
     } catch (err) {
       console.log(err);

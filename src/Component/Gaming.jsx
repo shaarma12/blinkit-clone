@@ -8,7 +8,6 @@ const Gaming = () => {
   const getGames = async () => {
     try {
       const response = await axios.get(GAMING_API);
-      console.log("Gaming", response?.data?.products);
       setProducts(response?.data?.products);
     } catch (err) {
       console.log(err);

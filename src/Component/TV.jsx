@@ -8,7 +8,6 @@ const TV = () => {
   const getTV = async () => {
     try {
       const response = await axios.get(TV_API);
-      console.log("TV", response?.data?.products);
       setProducts(response?.data?.products);
     } catch (err) {
       console.log(err);

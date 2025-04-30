@@ -8,7 +8,6 @@ const Mobile = () => {
   const getMobile = async () => {
     try {
       const response = await axios.get(MOBILE_API);
-      console.log("Mobile", response?.data?.products);
       setProducts(response?.data?.products);
     } catch (err) {
       console.log(err);

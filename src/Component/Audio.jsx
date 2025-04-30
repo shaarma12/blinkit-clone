@@ -8,7 +8,6 @@ const Audio = () => {
   const getAudio = async () => {
     try {
       const response = await axios.get(AUDIO_API);
-      console.log("audio", response?.data?.products);
       setProducts(response?.data?.products);
     } catch (err) {
       console.log(err);
