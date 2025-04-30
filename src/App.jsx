@@ -1,10 +1,14 @@
 import React from "react";
-
+import Header from "./Component/Header";
+import Footer from "./Component/Footer";
+import { Outlet } from "react-router-dom";
 const App = () => {
   return (
-    <div>
-      <h1 className="text-2xl text-red-500 font-bold">Blinkit</h1>
-    </div>
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
   );
 };
 
