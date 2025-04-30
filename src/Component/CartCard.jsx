@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addItems, removeItems } from "../utils/cartSlice";
 
-const Product = ({ productData }) => {
+const CartCard = ({ productData }) => {
   const { image, price, title, brand } = productData;
   const dispatch = useDispatch();
   const count = useSelector(
@@ -28,6 +28,7 @@ const Product = ({ productData }) => {
               onClick={() => {
                 dispatch(removeItems(productData));
               }}
+              className=""
             >
               -
             </p>
@@ -55,4 +56,4 @@ const Product = ({ productData }) => {
   );
 };
 
-export default Product;
+export default CartCard;

@@ -8,7 +8,7 @@ import TV from "./TV";
 
 const Body = () => {
   return (
-    <div className="flex flex-col items-center gap-4 mt-28">
+    <div className="flex flex-col items-center gap-4 my-28">
       <Appliances />
       <Audio />
       <Gaming />
